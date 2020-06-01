@@ -1,0 +1,57 @@
+
+/*Vue隐藏*/
+[v-cloak] {
+    display: none;
+}
+.g-boxShadow{
+    box-shadow: 0 0 .18rem 0 rgba(0,0,0,0.1);
+}
+/*透明度渐变*/
+.g-opacity{
+    -webkit-animation: opacity 0.3s linear;
+    animation: opacity 0.3s linear;
+}
+@-webkit-keyframes opacity {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes opacity {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/*清除浮动*/
+.g-clear{
+    zoom:1
+}
+.g-clear:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}
+/*子元素垂直水平居中*/
+.g-child-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*清除浮动*/
+.g-clear{
+    zoom:1
+}
+.g-clear:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}
