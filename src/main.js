@@ -3,12 +3,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import direct from './directive'
-import * as filters from './filters'
-//引入封装好的接口
 import api from './request/api'
+import * as filters from './filters'
+import * as dd from 'dingtalk-jsapi'
+import customComponents from './components'
+
+Vue.prototype.dd=dd
 Vue.prototype.$api = api
 // 全局注册公共组件
-import customComponents from './components'
 Vue.use(customComponents)
 Vue.config.productionTip = false
 // http请求库 不允许写请求，必须在request统一管理
