@@ -11,6 +11,10 @@ module.exports = {
       .set('components', resolve('src/components'))
       .set('base', resolve('baseConfig'))
       .set('public', resolve('public'))
+    config.plugin('html').tap(args => {
+      args[0].title= '你想设置的title名字'
+      return args
+    })
   },
   // publicPath:process.env.NODE_ENV === 'production' ? '/vue_workspac/aihuhuproject/' : '/',
 
